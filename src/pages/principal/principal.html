@@ -1,0 +1,104 @@
+<ion-header>
+	<ion-toolbar color="primary">
+		<ion-title>PAOO</ion-title>
+		<ion-buttons start left>
+			<button (click)="mostrar_menu()" ion-button small icon-only color="royal">
+				<ion-icon name="menu"></ion-icon>
+			</button>
+		</ion-buttons>
+	</ion-toolbar>
+</ion-header>
+
+
+
+<ion-content text-center class="icons-basic-page">
+	<img src="assets/imgs/banner.jpg"/>
+	<ion-row>
+		<ion-col>
+			<ion-icon name="clock" color="light" (click)="navegarPagina(minutoxminuto)"></ion-icon>
+			<p color="light">Programa General</p>
+		</ion-col>
+		<ion-col>
+			<ion-icon name="search" color="light" (click)="navegarPagina(profesores)"></ion-icon>
+			<p color="light">Buscador</p>
+		</ion-col>
+		<ion-col>
+			<ion-icon name="map" color="light" ></ion-icon>
+			<p color="light">Esquema General</p>
+		</ion-col>
+		<ion-col>
+			<ion-icon name="easel" color="light" ></ion-icon>
+			<p color="light">Carteles</p>
+		</ion-col>
+		<ion-col>
+			<ion-icon name="play" color="light" ></ion-icon>
+			<p color="light">Videos</p>
+		</ion-col>
+		<ion-col>
+			<ion-buttons>
+				<img  src="../assets/icon/smo.png" >
+			</ion-buttons>
+			<p color="light">Actividades SMO</p>
+		</ion-col>
+		<ion-col>
+			<ion-icon name="people" color="light" (click)="navegarPagina(profesores)"></ion-icon>
+			<p color="light">Ponentes</p>
+		</ion-col>
+		<ion-col>
+			<ion-icon name="megaphone" color="light" (click)="navegarPagina(introduccion)"></ion-icon>
+			<p color="light">Mensaje de Bienvenida</p>
+		</ion-col>
+		<ion-col>
+			<ion-icon name="plane" color="light" (click)="abrirWeb('http://gruporoyale.net/shop/home.php?lang=1&event=89&zona=1','system')"></ion-icon>
+			<p color="light">Lugares de interes</p>
+		</ion-col>
+		<ion-col>
+			<ion-icon name="flask" color="light" ></ion-icon>
+			<p color="light">Exposición Comercial</p>
+		</ion-col>
+
+		<ion-col>
+			<ion-icon name="ribbon" color="light" (click)="navegarPagina(patrocinadores)"></ion-icon>
+			<p color="light">Patrocinadores</p>
+		</ion-col>
+
+		<ion-col>
+			<ion-icon name="bus" color="light" (click)="navegarPagina(circuito)"></ion-icon>
+			<p color="light">Circuito de Autobuses</p>
+		</ion-col>
+
+		<ion-col>
+			<ion-icon name="calendar" color="light" (click)="navegarPagina(agenda)"></ion-icon>
+			<p color="light">Mi Agenda</p>
+		</ion-col>
+		<ion-col>
+			<ion-icon name="contacts" color="light" (click)="navegarPagina(congresistas)"></ion-icon>
+			<p color="light">Congresistas</p>
+		</ion-col>
+
+
+
+
+
+
+		<!-- <ion-col>
+			<ion-icon name="cube" color="light" (click)="navegarPagina(votacion)"></ion-icon>
+			<p color="light">Votaciones</p>
+		</ion-col>
+		 -->
+		
+		
+
+
+
+
+		<ion-col  *ngFor="let extra of ajustes.extras" >
+			<ion-icon name="{{extra.icono}}" color="light" (click)="abrirWeb(extra.url, extra.target)"></ion-icon>
+			<p color="light">{{extra.nombre}}</p>
+		</ion-col>
+
+
+	</ion-row>
+
+
+</ion-content>

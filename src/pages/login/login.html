@@ -1,0 +1,48 @@
+<ion-header>
+
+	<ion-navbar color="primary">
+		<ion-title>Iniciar Sesión</ion-title>
+		<ion-buttons start>
+			<button ion-button (click)="viewCtrl.dismiss()">
+				<span ion-text color="light" showWhen="ios">Cancelar</span>
+				<ion-icon name="md-close" showWhen="android,windows"></ion-icon>
+			</button>
+		</ion-buttons>
+	</ion-navbar>
+</ion-header>
+<ion-content padding>
+
+
+	<ion-list>
+		<p padding>Ingresa tu correo y contraseña con la que te registraste.</p>
+		<ion-item>
+			<ion-label floating>Correo:</ion-label>
+			<ion-input type="email" [(ngModel)]="correo"></ion-input>
+		</ion-item>
+
+		<ion-item>
+			<ion-label floating>Contraseña:</ion-label>
+			<ion-input type="password" [(ngModel)]="password"></ion-input>
+		</ion-item>
+
+		<div padding>
+			<button [disabled]="correo.length < 5 || password.length < 5 " ion-button block (click)="ingresar()">Inicia Sesión</button>
+		</div>
+
+		<p text-center >- O -</p>
+
+		<div padding>
+			<button ion-button color="facebook" block icon-left (click)="signInWithFacebook();">
+				<ion-icon name="logo-facebook"></ion-icon>
+				Facebook
+			</button>
+			
+		</div>
+		<hr>
+
+		<div padding>
+			<button ion-button color="light" block (click)="abrir_registro();" >Regístrate</button>
+		</div>
+	</ion-list>
+	
+</ion-content>

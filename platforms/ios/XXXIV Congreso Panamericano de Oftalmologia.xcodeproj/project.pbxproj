@@ -1,0 +1,684 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+/* Begin PBXBuildFile section */
+		0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0207DA571B56EA530066E2B4 /* Images.xcassets */; };
+		066794849D464E9AB9784762 /* CDVFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 6724500F4A3C41DD92A270D7 /* CDVFile.m */; };
+		09D2E41462744F9286AF8179 /* TextRequestSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 87E8EB6705B6408BAE686D86 /* TextRequestSerializer.m */; };
+		0AC05A1F3EE346D9B7F2E319 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FC833C9515F46299924F86C /* libz.tbd */; settings = {ATTRIBUTES = (Weak, ); }; };
+		0B96734438894FB2B6F23BC2 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 511C003688A2438C980D19C1 /* libz.dylib */; settings = {ATTRIBUTES = (Weak, ); }; };
+		0DBD3D8EB8EE41CAAA20C167 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = D07C2568FDAC41DBB5E69700 /* AFURLResponseSerialization.m */; };
+		1329AFF7716B479E8D11BBBD /* CordovaHttpPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = B7DADEF331F6441C9675750D /* CordovaHttpPlugin.m */; };
+		1370A5A1B5A34B07BACD9B80 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EE1D433D39F413CA8A173B0 /* Bolts.framework */; };
+		15A0B893011B41FD9888777C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35193A89AF464DC9BAE18E44 /* Security.framework */; };
+		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1FCDAD82DC1E4F68836742BE /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3394BF300F34A098AA9A2FA /* AddressBook.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		21448A7E22984A32A6F9E41D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6C1EE297EB642378A11282B /* SystemConfiguration.framework */; };
+		219015F3EEC94448807AC880 /* GooglePlus.m in Sources */ = {isa = PBXBuildFile; fileRef = CF82E41D2FC14DB0BBB2575E /* GooglePlus.m */; };
+		28C006984E184156A37B2A06 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 186FC1DE6D6B4A51855089FB /* AFURLRequestSerialization.m */; };
+		2CC1F084AFFF4CE39908D924 /* GoogleNetworkingUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83A41FE4B1E5473F9929758A /* GoogleNetworkingUtilities.framework */; };
+		2E58640BB2B9482DBD85B748 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0092BD7A38442D48B61E39F /* FBSDKShareKit.framework */; };
+		301BF552109A68D80062928A /* libCordova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 301BF535109A57CC0062928A /* libCordova.a */; settings = {ATTRIBUTES = (Required, ); }; };
+		302D95F114D2391D003F00A1 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 302D95EF14D2391D003F00A1 /* MainViewController.m */; };
+		302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 302D95F014D2391D003F00A1 /* MainViewController.xib */; };
+		367FBC37B4ED4436B1F57C52 /* GoogleUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F07BD3E35474681AED2A64D /* GoogleUtilities.framework */; };
+		3BBB74023DDD490981956946 /* CDVDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = B50D3ED1541846B9A41539E5 /* CDVDevice.m */; };
+		49D57724213542C3BA0F8BBF /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 194383BC2D0D4976B83F63BB /* AFNetworkReachabilityManager.m */; };
+		4A0FCDB090944AFFB57B16F3 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5CF6DCD45734144A9CF67E4 /* SafariServices.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		4A86097961A748D18A174728 /* GoogleSymbolUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3343732865347488E156E9B /* GoogleSymbolUtilities.framework */; };
+		6107CC65868844C6A75576DD /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F4EBE1FC28B24717A3BAEC74 /* AFHTTPSessionManager.m */; };
+		66CE77C52FF64A3EBDD4A148 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C971B138DA9D4F1FB41C189C /* FBSDKCoreKit.framework */; };
+		6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */; };
+		6D09C5CEFF274634BEEE7B9B /* CDVLocalFilesystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 575BCB42231E48559D6565B6 /* CDVLocalFilesystem.m */; };
+		7696BB38C9F84DA1A48F8DC6 /* CDVAssetLibraryFilesystem.m in Sources */ = {isa = PBXBuildFile; fileRef = BF890C62B0D14228B9089E02 /* CDVAssetLibraryFilesystem.m */; };
+		990548B4550D4B818F1005E6 /* GoogleAppUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DEBC4E375E84237AAB8E8C2 /* GoogleAppUtilities.framework */; };
+		9BAEE56A948447B2AD8A294E /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E55786C378B4339B3595B17 /* CoreText.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		9BDD4DDA87D440EAAF62FDFC /* SDNetworkActivityIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = CFCBD0A620C84F649EF30A06 /* SDNetworkActivityIndicator.m */; };
+		A7DED1BE86E04B5A96E88D08 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B32C4DBE7927439BA961199B /* FBSDKLoginKit.framework */; };
+		B240003DBC934E2D8EB77779 /* GoogleAuthUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AC851FF52084FD89CD8D59F /* GoogleAuthUtilities.framework */; };
+		B2D8005A517043C3A23EF190 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2812BCD3AC9A4E55997B5E41 /* AFURLSessionManager.m */; };
+		B5201427A980405982097AA6 /* TextResponseSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C7D24399AC4A5ABBF001A6 /* TextResponseSerializer.m */; };
+		C12C6D561D8E450B913ACB0E /* CDVLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D9AD4961ADA494097AF221F /* CDVLocation.m */; };
+		E0747DD2CC0948FA82FBEBEE /* GoogleSignIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 998EB7B17F48409F9B6D01D0 /* GoogleSignIn.framework */; };
+		E334A3ED61854F449F0DFE41 /* FacebookConnectPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 785A6CAD6CFB4AF898AD098A /* FacebookConnectPlugin.m */; };
+		EDA18FC099FA45519D9B3059 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0407E78661D4A24A0C736A6 /* CoreLocation.framework */; };
+		FFD0B62D4BCE454EBF2281D7 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFD38B48D4248A9862909F5 /* AFSecurityPolicy.m */; };
+		51159A4C19174BDAAD9DEE19 /* Toast+UIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 21E49501E0D04DDCAB36095A /* Toast+UIView.m */; };
+		EBA9FBED0EE8420197BA7A27 /* Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 59EEF1780BBB49DC8A987B6D /* Toast.m */; };
+		DD61BC9BF23E4B48B510C382 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D45D475B94234C818AC3A2A0 /* QuartzCore.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		301BF534109A57CC0062928A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 301BF52D109A57CC0062928A /* CordovaLib/CordovaLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = CordovaLib;
+		};
+		301BF550109A68C00062928A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 301BF52D109A57CC0062928A /* CordovaLib/CordovaLib.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = CordovaLib;
+		};
+		907D8123214C687600058A10 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 301BF52D109A57CC0062928A /* CordovaLib/CordovaLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C0C01EB21E3911D50056E6CB;
+			remoteInfo = Cordova;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0207DA571B56EA530066E2B4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "XXXIV Congreso Panamericano de Oftalmologia/Images.xcassets"; sourceTree = SOURCE_ROOT; };
+		16A837C8BD174F96A6E0D5DE /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = AFHTTPSessionManager.h; path = "cordova-plugin-advanced-http/AFHTTPSessionManager.h"; sourceTree = "<group>"; };
+		186FC1DE6D6B4A51855089FB /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = AFURLRequestSerialization.m; path = "cordova-plugin-advanced-http/AFURLRequestSerialization.m"; sourceTree = "<group>"; };
+		194383BC2D0D4976B83F63BB /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = AFNetworkReachabilityManager.m; path = "cordova-plugin-advanced-http/AFNetworkReachabilityManager.m"; sourceTree = "<group>"; };
+		1D3623240D0F684500981E51 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* XXXIV Congreso Panamericano de Oftalmologia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "XXXIV Congreso Panamericano de Oftalmologia.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1ECA0C42A1EE406B8023E180 /* AFNetworking.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = "cordova-plugin-advanced-http/AFNetworking.h"; sourceTree = "<group>"; };
+		1EE1D433D39F413CA8A173B0 /* Bolts.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "XXXIV Congreso Panamericano de Oftalmologia/Plugins/cordova-plugin-facebook4/Bolts.framework"; sourceTree = "<group>"; };
+		2812BCD3AC9A4E55997B5E41 /* AFURLSessionManager.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = AFURLSessionManager.m; path = "cordova-plugin-advanced-http/AFURLSessionManager.m"; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2BEA1CA8E6D54C01B4576398 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = AFURLResponseSerialization.h; path = "cordova-plugin-advanced-http/AFURLResponseSerialization.h"; sourceTree = "<group>"; };
+		2F07BD3E35474681AED2A64D /* GoogleUtilities.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = GoogleUtilities.framework; path = "XXXIV Congreso Panamericano de Oftalmologia/Plugins/cordova-plugin-googleplus/GoogleUtilities.framework"; sourceTree = "<group>"; };
+		301BF52D109A57CC0062928A /* CordovaLib/CordovaLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = CordovaLib/CordovaLib.xcodeproj; sourceTree = "<group>"; };
+		301BF56E109A69640062928A /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = SOURCE_ROOT; };
+		302D95EE14D2391D003F00A1 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		302D95EF14D2391D003F00A1 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		302D95F014D2391D003F00A1 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		3047A50F1AB8059700498E2A /* build-debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "build-debug.xcconfig"; path = "cordova/build-debug.xcconfig"; sourceTree = SOURCE_ROOT; };
+		3047A5101AB8059700498E2A /* build-release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "build-release.xcconfig"; path = "cordova/build-release.xcconfig"; sourceTree = SOURCE_ROOT; };
+		3047A5111AB8059700498E2A /* build.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = build.xcconfig; path = cordova/build.xcconfig; sourceTree = SOURCE_ROOT; };
+		32CA4F630368D1EE00C91783 /* XXXIV Congreso Panamericano de Oftalmologia-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XXXIV Congreso Panamericano de Oftalmologia-Prefix.pch"; sourceTree = "<group>"; };
+		35193A89AF464DC9BAE18E44 /* Security.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		3D7BC42AE077499AB78C4EFB /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = AFNetworkReachabilityManager.h; path = "cordova-plugin-advanced-http/AFNetworkReachabilityManager.h"; sourceTree = "<group>"; };
+		3DEBC4E375E84237AAB8E8C2 /* GoogleAppUtilities.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = GoogleAppUtilities.framework; path = "XXXIV Congreso Panamericano de Oftalmologia/Plugins/cordova-plugin-googleplus/GoogleAppUtilities.framework"; sourceTree = "<group>"; };
+		3FC833C9515F46299924F86C /* libz.tbd */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		511C003688A2438C980D19C1 /* libz.dylib */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		575BCB42231E48559D6565B6 /* CDVLocalFilesystem.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVLocalFilesystem.m; path = "cordova-plugin-file/CDVLocalFilesystem.m"; sourceTree = "<group>"; };
+		62A43031AE10403F8721D5F5 /* GooglePlus.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = GooglePlus.h; path = "cordova-plugin-googleplus/GooglePlus.h"; sourceTree = "<group>"; };
+		650A67E74025470A94AE3819 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = AFURLRequestSerialization.h; path = "cordova-plugin-advanced-http/AFURLRequestSerialization.h"; sourceTree = "<group>"; };
+		6724500F4A3C41DD92A270D7 /* CDVFile.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVFile.m; path = "cordova-plugin-file/CDVFile.m"; sourceTree = "<group>"; };
+		6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = CDVLaunchScreen.storyboard; path = "XXXIV Congreso Panamericano de Oftalmologia/CDVLaunchScreen.storyboard"; sourceTree = SOURCE_ROOT; };
+		6E1364E8CA474810A1C022A0 /* CDVLocation.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVLocation.h; path = "cordova-plugin-geolocation/CDVLocation.h"; sourceTree = "<group>"; };
+		785A6CAD6CFB4AF898AD098A /* FacebookConnectPlugin.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = FacebookConnectPlugin.m; path = "cordova-plugin-facebook4/FacebookConnectPlugin.m"; sourceTree = "<group>"; };
+		80D591F63D8C4B2B846CD82C /* CDVFile.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVFile.h; path = "cordova-plugin-file/CDVFile.h"; sourceTree = "<group>"; };
+		83A41FE4B1E5473F9929758A /* GoogleNetworkingUtilities.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = GoogleNetworkingUtilities.framework; path = "XXXIV Congreso Panamericano de Oftalmologia/Plugins/cordova-plugin-googleplus/GoogleNetworkingUtilities.framework"; sourceTree = "<group>"; };
+		8756A53A63004326A9296976 /* CDVDevice.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVDevice.h; path = "cordova-plugin-device/CDVDevice.h"; sourceTree = "<group>"; };
+		87E8EB6705B6408BAE686D86 /* TextRequestSerializer.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = TextRequestSerializer.m; path = "cordova-plugin-advanced-http/TextRequestSerializer.m"; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* XXXIV Congreso Panamericano de Oftalmologia-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "XXXIV Congreso Panamericano de Oftalmologia-Info.plist"; path = "XXXIV Congreso Panamericano de Oftalmologia/XXXIV Congreso Panamericano de Oftalmologia-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = SOURCE_ROOT; };
+		9118C71884C34BBB95C3B490 /* AFURLSessionManager.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = AFURLSessionManager.h; path = "cordova-plugin-advanced-http/AFURLSessionManager.h"; sourceTree = "<group>"; };
+		984FE96DA69D4D54A610128C /* TextResponseSerializer.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = TextResponseSerializer.h; path = "cordova-plugin-advanced-http/TextResponseSerializer.h"; sourceTree = "<group>"; };
+		996D67DFEBA64D09BC686067 /* SDNetworkActivityIndicator.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = SDNetworkActivityIndicator.h; path = "cordova-plugin-advanced-http/SDNetworkActivityIndicator.h"; sourceTree = "<group>"; };
+		998EB7B17F48409F9B6D01D0 /* GoogleSignIn.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = GoogleSignIn.framework; path = "XXXIV Congreso Panamericano de Oftalmologia/Plugins/cordova-plugin-googleplus/GoogleSignIn.framework"; sourceTree = "<group>"; };
+		9AC851FF52084FD89CD8D59F /* GoogleAuthUtilities.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = GoogleAuthUtilities.framework; path = "XXXIV Congreso Panamericano de Oftalmologia/Plugins/cordova-plugin-googleplus/GoogleAuthUtilities.framework"; sourceTree = "<group>"; };
+		9D9AD4961ADA494097AF221F /* CDVLocation.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVLocation.m; path = "cordova-plugin-geolocation/CDVLocation.m"; sourceTree = "<group>"; };
+		9E55786C378B4339B3595B17 /* CoreText.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		B32C4DBE7927439BA961199B /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = "XXXIV Congreso Panamericano de Oftalmologia/Plugins/cordova-plugin-facebook4/FBSDKLoginKit.framework"; sourceTree = "<group>"; };
+		B50D3ED1541846B9A41539E5 /* CDVDevice.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVDevice.m; path = "cordova-plugin-device/CDVDevice.m"; sourceTree = "<group>"; };
+		B6C1EE297EB642378A11282B /* SystemConfiguration.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		B7DADEF331F6441C9675750D /* CordovaHttpPlugin.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CordovaHttpPlugin.m; path = "cordova-plugin-advanced-http/CordovaHttpPlugin.m"; sourceTree = "<group>"; };
+		BF890C62B0D14228B9089E02 /* CDVAssetLibraryFilesystem.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVAssetLibraryFilesystem.m; path = "cordova-plugin-file/CDVAssetLibraryFilesystem.m"; sourceTree = "<group>"; };
+		C0092BD7A38442D48B61E39F /* FBSDKShareKit.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = "XXXIV Congreso Panamericano de Oftalmologia/Plugins/cordova-plugin-facebook4/FBSDKShareKit.framework"; sourceTree = "<group>"; };
+		C3394BF300F34A098AA9A2FA /* AddressBook.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		C971B138DA9D4F1FB41C189C /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = "XXXIV Congreso Panamericano de Oftalmologia/Plugins/cordova-plugin-facebook4/FBSDKCoreKit.framework"; sourceTree = "<group>"; };
+		CD31B863A9F042EEAB952710 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = AFSecurityPolicy.h; path = "cordova-plugin-advanced-http/AFSecurityPolicy.h"; sourceTree = "<group>"; };
+		CF82E41D2FC14DB0BBB2575E /* GooglePlus.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = GooglePlus.m; path = "cordova-plugin-googleplus/GooglePlus.m"; sourceTree = "<group>"; };
+		CFCBD0A620C84F649EF30A06 /* SDNetworkActivityIndicator.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = SDNetworkActivityIndicator.m; path = "cordova-plugin-advanced-http/SDNetworkActivityIndicator.m"; sourceTree = "<group>"; };
+		D0407E78661D4A24A0C736A6 /* CoreLocation.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		D07C2568FDAC41DBB5E69700 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = AFURLResponseSerialization.m; path = "cordova-plugin-advanced-http/AFURLResponseSerialization.m"; sourceTree = "<group>"; };
+		D3343732865347488E156E9B /* GoogleSymbolUtilities.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = GoogleSymbolUtilities.framework; path = "XXXIV Congreso Panamericano de Oftalmologia/Plugins/cordova-plugin-googleplus/GoogleSymbolUtilities.framework"; sourceTree = "<group>"; };
+		D8C7D24399AC4A5ABBF001A6 /* TextResponseSerializer.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = TextResponseSerializer.m; path = "cordova-plugin-advanced-http/TextResponseSerializer.m"; sourceTree = "<group>"; };
+		DAFD38B48D4248A9862909F5 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = AFSecurityPolicy.m; path = "cordova-plugin-advanced-http/AFSecurityPolicy.m"; sourceTree = "<group>"; };
+		EB87FDF31871DA8E0020F90C /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = ../../www; sourceTree = "<group>"; };
+		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
+		ECAA9DE0332044C8BBCEB3A6 /* CordovaHttpPlugin.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CordovaHttpPlugin.h; path = "cordova-plugin-advanced-http/CordovaHttpPlugin.h"; sourceTree = "<group>"; };
+		ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		EF25FC934BE7469AB87EB99E /* TextRequestSerializer.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = TextRequestSerializer.h; path = "cordova-plugin-advanced-http/TextRequestSerializer.h"; sourceTree = "<group>"; };
+		F1F1DFA8B0BB40009ECDA46A /* CDVLocalFilesystem.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVLocalFilesystem.h; path = "cordova-plugin-file/CDVLocalFilesystem.h"; sourceTree = "<group>"; };
+		F4EBE1FC28B24717A3BAEC74 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = AFHTTPSessionManager.m; path = "cordova-plugin-advanced-http/AFHTTPSessionManager.m"; sourceTree = "<group>"; };
+		F5CF6DCD45734144A9CF67E4 /* SafariServices.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = "XXXIV Congreso Panamericano de Oftalmologia/config.xml"; sourceTree = "<group>"; };
+		FB1C32DEC9294D5D9582FF11 /* FacebookConnectPlugin.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = FacebookConnectPlugin.h; path = "cordova-plugin-facebook4/FacebookConnectPlugin.h"; sourceTree = "<group>"; };
+		FE836AA994CB45869DF06D69 /* CDVAssetLibraryFilesystem.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVAssetLibraryFilesystem.h; path = "cordova-plugin-file/CDVAssetLibraryFilesystem.h"; sourceTree = "<group>"; };
+		21E49501E0D04DDCAB36095A /* Toast+UIView.m */ = {isa = PBXFileReference; name = "Toast+UIView.m"; path = "cordova-plugin-x-toast/Toast+UIView.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		59EEF1780BBB49DC8A987B6D /* Toast.m */ = {isa = PBXFileReference; name = "Toast.m"; path = "cordova-plugin-x-toast/Toast.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		FD22D5DFB0EF4847B871E69F /* Toast+UIView.h */ = {isa = PBXFileReference; name = "Toast+UIView.h"; path = "cordova-plugin-x-toast/Toast+UIView.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		D3C6CDC85EB24737B8B11CBC /* Toast.h */ = {isa = PBXFileReference; name = "Toast.h"; path = "cordova-plugin-x-toast/Toast.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		D45D475B94234C818AC3A2A0 /* QuartzCore.framework */ = {isa = PBXFileReference; name = "QuartzCore.framework"; path = "System/Library/Frameworks/QuartzCore.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
+				15A0B893011B41FD9888777C /* Security.framework in Frameworks */,
+				21448A7E22984A32A6F9E41D /* SystemConfiguration.framework in Frameworks */,
+				1370A5A1B5A34B07BACD9B80 /* Bolts.framework in Frameworks */,
+				66CE77C52FF64A3EBDD4A148 /* FBSDKCoreKit.framework in Frameworks */,
+				A7DED1BE86E04B5A96E88D08 /* FBSDKLoginKit.framework in Frameworks */,
+				2E58640BB2B9482DBD85B748 /* FBSDKShareKit.framework in Frameworks */,
+				EDA18FC099FA45519D9B3059 /* CoreLocation.framework in Frameworks */,
+				990548B4550D4B818F1005E6 /* GoogleAppUtilities.framework in Frameworks */,
+				B240003DBC934E2D8EB77779 /* GoogleAuthUtilities.framework in Frameworks */,
+				2CC1F084AFFF4CE39908D924 /* GoogleNetworkingUtilities.framework in Frameworks */,
+				E0747DD2CC0948FA82FBEBEE /* GoogleSignIn.framework in Frameworks */,
+				4A86097961A748D18A174728 /* GoogleSymbolUtilities.framework in Frameworks */,
+				367FBC37B4ED4436B1F57C52 /* GoogleUtilities.framework in Frameworks */,
+				1FCDAD82DC1E4F68836742BE /* AddressBook.framework in Frameworks */,
+				9BAEE56A948447B2AD8A294E /* CoreText.framework in Frameworks */,
+				4A0FCDB090944AFFB57B16F3 /* SafariServices.framework in Frameworks */,
+				0AC05A1F3EE346D9B7F2E319 /* libz.tbd in Frameworks */,
+				0B96734438894FB2B6F23BC2 /* libz.dylib in Frameworks */,
+				DD61BC9BF23E4B48B510C382 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				302D95EE14D2391D003F00A1 /* MainViewController.h */,
+				302D95EF14D2391D003F00A1 /* MainViewController.m */,
+				302D95F014D2391D003F00A1 /* MainViewController.xib */,
+				1D3623240D0F684500981E51 /* AppDelegate.h */,
+				1D3623250D0F684500981E51 /* AppDelegate.m */,
+			);
+			name = Classes;
+			path = "XXXIV Congreso Panamericano de Oftalmologia/Classes";
+			sourceTree = SOURCE_ROOT;
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* XXXIV Congreso Panamericano de Oftalmologia.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				EB87FDF41871DAF40020F90C /* config.xml */,
+				EB87FDF31871DA8E0020F90C /* www */,
+				EB87FDF11871DA420020F90C /* Staging */,
+				301BF52D109A57CC0062928A /* CordovaLib/CordovaLib.xcodeproj */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				307C750510C5A3420062BCA9 /* Plugins */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* XXXIV Congreso Panamericano de Oftalmologia-Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+				ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */,
+			);
+			name = "Other Sources";
+			path = "XXXIV Congreso Panamericano de Oftalmologia";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0207DA571B56EA530066E2B4 /* Images.xcassets */,
+				3047A50E1AB8057F00498E2A /* config */,
+				8D1107310486CEB800E47090 /* XXXIV Congreso Panamericano de Oftalmologia-Info.plist */,
+				6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */,
+			);
+			name = Resources;
+			path = "XXXIV Congreso Panamericano de Oftalmologia/Resources";
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				35193A89AF464DC9BAE18E44 /* Security.framework */,
+				B6C1EE297EB642378A11282B /* SystemConfiguration.framework */,
+				1EE1D433D39F413CA8A173B0 /* Bolts.framework */,
+				C971B138DA9D4F1FB41C189C /* FBSDKCoreKit.framework */,
+				B32C4DBE7927439BA961199B /* FBSDKLoginKit.framework */,
+				C0092BD7A38442D48B61E39F /* FBSDKShareKit.framework */,
+				D0407E78661D4A24A0C736A6 /* CoreLocation.framework */,
+				3DEBC4E375E84237AAB8E8C2 /* GoogleAppUtilities.framework */,
+				9AC851FF52084FD89CD8D59F /* GoogleAuthUtilities.framework */,
+				83A41FE4B1E5473F9929758A /* GoogleNetworkingUtilities.framework */,
+				998EB7B17F48409F9B6D01D0 /* GoogleSignIn.framework */,
+				D3343732865347488E156E9B /* GoogleSymbolUtilities.framework */,
+				2F07BD3E35474681AED2A64D /* GoogleUtilities.framework */,
+				C3394BF300F34A098AA9A2FA /* AddressBook.framework */,
+				9E55786C378B4339B3595B17 /* CoreText.framework */,
+				F5CF6DCD45734144A9CF67E4 /* SafariServices.framework */,
+				3FC833C9515F46299924F86C /* libz.tbd */,
+				511C003688A2438C980D19C1 /* libz.dylib */,
+				D45D475B94234C818AC3A2A0 /* QuartzCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		301BF52E109A57CC0062928A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				301BF535109A57CC0062928A /* libCordova.a */,
+				907D8124214C687600058A10 /* Cordova.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3047A50E1AB8057F00498E2A /* config */ = {
+			isa = PBXGroup;
+			children = (
+				3047A50F1AB8059700498E2A /* build-debug.xcconfig */,
+				3047A5101AB8059700498E2A /* build-release.xcconfig */,
+				3047A5111AB8059700498E2A /* build.xcconfig */,
+			);
+			name = config;
+			sourceTree = "<group>";
+		};
+		307C750510C5A3420062BCA9 /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				6724500F4A3C41DD92A270D7 /* CDVFile.m */,
+				575BCB42231E48559D6565B6 /* CDVLocalFilesystem.m */,
+				BF890C62B0D14228B9089E02 /* CDVAssetLibraryFilesystem.m */,
+				80D591F63D8C4B2B846CD82C /* CDVFile.h */,
+				F1F1DFA8B0BB40009ECDA46A /* CDVLocalFilesystem.h */,
+				FE836AA994CB45869DF06D69 /* CDVAssetLibraryFilesystem.h */,
+				B7DADEF331F6441C9675750D /* CordovaHttpPlugin.m */,
+				D8C7D24399AC4A5ABBF001A6 /* TextResponseSerializer.m */,
+				87E8EB6705B6408BAE686D86 /* TextRequestSerializer.m */,
+				F4EBE1FC28B24717A3BAEC74 /* AFHTTPSessionManager.m */,
+				194383BC2D0D4976B83F63BB /* AFNetworkReachabilityManager.m */,
+				DAFD38B48D4248A9862909F5 /* AFSecurityPolicy.m */,
+				186FC1DE6D6B4A51855089FB /* AFURLRequestSerialization.m */,
+				D07C2568FDAC41DBB5E69700 /* AFURLResponseSerialization.m */,
+				2812BCD3AC9A4E55997B5E41 /* AFURLSessionManager.m */,
+				CFCBD0A620C84F649EF30A06 /* SDNetworkActivityIndicator.m */,
+				ECAA9DE0332044C8BBCEB3A6 /* CordovaHttpPlugin.h */,
+				984FE96DA69D4D54A610128C /* TextResponseSerializer.h */,
+				EF25FC934BE7469AB87EB99E /* TextRequestSerializer.h */,
+				16A837C8BD174F96A6E0D5DE /* AFHTTPSessionManager.h */,
+				1ECA0C42A1EE406B8023E180 /* AFNetworking.h */,
+				3D7BC42AE077499AB78C4EFB /* AFNetworkReachabilityManager.h */,
+				CD31B863A9F042EEAB952710 /* AFSecurityPolicy.h */,
+				650A67E74025470A94AE3819 /* AFURLRequestSerialization.h */,
+				2BEA1CA8E6D54C01B4576398 /* AFURLResponseSerialization.h */,
+				9118C71884C34BBB95C3B490 /* AFURLSessionManager.h */,
+				996D67DFEBA64D09BC686067 /* SDNetworkActivityIndicator.h */,
+				B50D3ED1541846B9A41539E5 /* CDVDevice.m */,
+				8756A53A63004326A9296976 /* CDVDevice.h */,
+				785A6CAD6CFB4AF898AD098A /* FacebookConnectPlugin.m */,
+				FB1C32DEC9294D5D9582FF11 /* FacebookConnectPlugin.h */,
+				9D9AD4961ADA494097AF221F /* CDVLocation.m */,
+				6E1364E8CA474810A1C022A0 /* CDVLocation.h */,
+				CF82E41D2FC14DB0BBB2575E /* GooglePlus.m */,
+				62A43031AE10403F8721D5F5 /* GooglePlus.h */,
+				21E49501E0D04DDCAB36095A /* Toast+UIView.m */,
+				59EEF1780BBB49DC8A987B6D /* Toast.m */,
+				FD22D5DFB0EF4847B871E69F /* Toast+UIView.h */,
+				D3C6CDC85EB24737B8B11CBC /* Toast.h */,
+			);
+			name = Plugins;
+			path = "XXXIV Congreso Panamericano de Oftalmologia/Plugins";
+			sourceTree = SOURCE_ROOT;
+		};
+		EB87FDF11871DA420020F90C /* Staging */ = {
+			isa = PBXGroup;
+			children = (
+				F840E1F0165FE0F500CFE078 /* config.xml */,
+				301BF56E109A69640062928A /* www */,
+			);
+			name = Staging;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* XXXIV Congreso Panamericano de Oftalmologia */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "XXXIV Congreso Panamericano de Oftalmologia" */;
+			buildPhases = (
+				304B58A110DAC018002A0835 /* Copy www directory */,
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				301BF551109A68C00062928A /* PBXTargetDependency */,
+			);
+			name = "XXXIV Congreso Panamericano de Oftalmologia";
+			productName = "XXXIV Congreso Panamericano de Oftalmologia";
+			productReference = 1D6058910D05DD3D006BFB54 /* XXXIV Congreso Panamericano de Oftalmologia.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 510;
+				TargetAttributes = {
+					1D6058900D05DD3D006BFB54 = {
+						DevelopmentTeam = VF6838B5PA;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "XXXIV Congreso Panamericano de Oftalmologia" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				en,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 301BF52E109A57CC0062928A /* Products */;
+					ProjectRef = 301BF52D109A57CC0062928A /* CordovaLib/CordovaLib.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* XXXIV Congreso Panamericano de Oftalmologia */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		301BF535109A57CC0062928A /* libCordova.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCordova.a;
+			remoteRef = 301BF534109A57CC0062928A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		907D8124214C687600058A10 /* Cordova.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Cordova.framework;
+			remoteRef = 907D8123214C687600058A10 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */,
+				0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */,
+				6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		304B58A110DAC018002A0835 /* Copy www directory */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy www directory";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "NODEJS_PATH=/usr/local/bin; NVM_NODE_PATH=~/.nvm/versions/node/`nvm version 2>/dev/null`/bin; N_NODE_PATH=`find /usr/local/n/versions/node/* -maxdepth 0 -type d 2>/dev/null | tail -1`/bin; XCODE_NODE_PATH=`xcode-select --print-path`/usr/share/xcs/Node/bin; PATH=$NODEJS_PATH:$NVM_NODE_PATH:$N_NODE_PATH:$XCODE_NODE_PATH:$PATH && node cordova/lib/copy-www-build-step.js";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
+				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
+				066794849D464E9AB9784762 /* CDVFile.m in Sources */,
+				6D09C5CEFF274634BEEE7B9B /* CDVLocalFilesystem.m in Sources */,
+				7696BB38C9F84DA1A48F8DC6 /* CDVAssetLibraryFilesystem.m in Sources */,
+				1329AFF7716B479E8D11BBBD /* CordovaHttpPlugin.m in Sources */,
+				B5201427A980405982097AA6 /* TextResponseSerializer.m in Sources */,
+				09D2E41462744F9286AF8179 /* TextRequestSerializer.m in Sources */,
+				6107CC65868844C6A75576DD /* AFHTTPSessionManager.m in Sources */,
+				49D57724213542C3BA0F8BBF /* AFNetworkReachabilityManager.m in Sources */,
+				FFD0B62D4BCE454EBF2281D7 /* AFSecurityPolicy.m in Sources */,
+				28C006984E184156A37B2A06 /* AFURLRequestSerialization.m in Sources */,
+				0DBD3D8EB8EE41CAAA20C167 /* AFURLResponseSerialization.m in Sources */,
+				B2D8005A517043C3A23EF190 /* AFURLSessionManager.m in Sources */,
+				9BDD4DDA87D440EAAF62FDFC /* SDNetworkActivityIndicator.m in Sources */,
+				3BBB74023DDD490981956946 /* CDVDevice.m in Sources */,
+				E334A3ED61854F449F0DFE41 /* FacebookConnectPlugin.m in Sources */,
+				C12C6D561D8E450B913ACB0E /* CDVLocation.m in Sources */,
+				219015F3EEC94448807AC880 /* GooglePlus.m in Sources */,
+				51159A4C19174BDAAD9DEE19 /* Toast+UIView.m in Sources */,
+				EBA9FBED0EE8420197BA7A27 /* Toast.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		301BF551109A68C00062928A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CordovaLib;
+			targetProxy = 301BF550109A68C00062928A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3047A50F1AB8059700498E2A /* build-debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = VF6838B5PA;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"XXXIV Congreso Panamericano de Oftalmologia/Plugins/cordova-plugin-facebook4\"",
+					"\"XXXIV Congreso Panamericano de Oftalmologia/Plugins/cordova-plugin-facebook4\"",
+					"\"XXXIV Congreso Panamericano de Oftalmologia/Plugins/cordova-plugin-facebook4\"",
+					"\"XXXIV Congreso Panamericano de Oftalmologia/Plugins/cordova-plugin-facebook4\"",
+					"\"XXXIV Congreso Panamericano de Oftalmologia/Plugins/cordova-plugin-googleplus\"",
+					"\"XXXIV Congreso Panamericano de Oftalmologia/Plugins/cordova-plugin-googleplus\"",
+					"\"XXXIV Congreso Panamericano de Oftalmologia/Plugins/cordova-plugin-googleplus\"",
+					"\"XXXIV Congreso Panamericano de Oftalmologia/Plugins/cordova-plugin-googleplus\"",
+					"\"XXXIV Congreso Panamericano de Oftalmologia/Plugins/cordova-plugin-googleplus\"",
+					"\"XXXIV Congreso Panamericano de Oftalmologia/Plugins/cordova-plugin-googleplus\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "XXXIV Congreso Panamericano de Oftalmologia/XXXIV Congreso Panamericano de Oftalmologia-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				INFOPLIST_FILE = "XXXIV Congreso Panamericano de Oftalmologia/XXXIV Congreso Panamericano de Oftalmologia-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.brb.paoo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3047A5101AB8059700498E2A /* build-release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = VF6838B5PA;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"XXXIV Congreso Panamericano de Oftalmologia/Plugins/cordova-plugin-facebook4\"",
+					"\"XXXIV Congreso Panamericano de Oftalmologia/Plugins/cordova-plugin-facebook4\"",
+					"\"XXXIV Congreso Panamericano de Oftalmologia/Plugins/cordova-plugin-facebook4\"",
+					"\"XXXIV Congreso Panamericano de Oftalmologia/Plugins/cordova-plugin-facebook4\"",
+					"\"XXXIV Congreso Panamericano de Oftalmologia/Plugins/cordova-plugin-googleplus\"",
+					"\"XXXIV Congreso Panamericano de Oftalmologia/Plugins/cordova-plugin-googleplus\"",
+					"\"XXXIV Congreso Panamericano de Oftalmologia/Plugins/cordova-plugin-googleplus\"",
+					"\"XXXIV Congreso Panamericano de Oftalmologia/Plugins/cordova-plugin-googleplus\"",
+					"\"XXXIV Congreso Panamericano de Oftalmologia/Plugins/cordova-plugin-googleplus\"",
+					"\"XXXIV Congreso Panamericano de Oftalmologia/Plugins/cordova-plugin-googleplus\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "XXXIV Congreso Panamericano de Oftalmologia/XXXIV Congreso Panamericano de Oftalmologia-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				INFOPLIST_FILE = "XXXIV Congreso Panamericano de Oftalmologia/XXXIV Congreso Panamericano de Oftalmologia-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.brb.paoo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3047A5111AB8059700498E2A /* build.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.brb.paoo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3047A5111AB8059700498E2A /* build.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.brb.paoo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "XXXIV Congreso Panamericano de Oftalmologia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "XXXIV Congreso Panamericano de Oftalmologia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

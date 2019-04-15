@@ -1,0 +1,50 @@
+<ion-menu [content]="content">
+
+	<ion-header>
+		<ion-toolbar color="primary">
+			<ion-title>
+				Menú
+			</ion-title>	
+		</ion-toolbar>
+	</ion-header>
+
+	<ion-content>
+		<img src="assets/imgs/banner.jpg"/>
+		<ion-list>
+			<button ion-item (click)="abrirPagina(tabs)">
+				<ion-icon name="home"></ion-icon> Inicio
+			</button>
+			<button ion-item (click)="abrirPagina(minutoxminuto)">
+				<ion-icon name="clock"></ion-icon> Programa académico
+			</button>
+			<button ion-item (click)="abrirPagina(profesores)">
+				<ion-icon name="mic"></ion-icon> Ponentes
+			</button>
+			
+			
+			<button ion-item (click)="abrirPagina(comite)">
+				<ion-icon name="people"></ion-icon> Comité Organizador
+			</button>
+			
+			<button ion-item (click)="abrirPagina(votaciones)">
+				<ion-icon name="cube"></ion-icon> Votaciones
+			</button>
+			<button ion-item (click)="abrirPagina(patrocinadores)">
+				<ion-icon name="bookmark"></ion-icon> Patrocinadores
+			</button>
+			<button ion-item (click)="abrir_modal(introduccion)">
+				<ion-icon name="megaphone"></ion-icon> Mensaje de la Presidenta
+			</button>
+			<button ion-item (click)="abrirPagina(lugares)">
+				<ion-icon name="pin"></ion-icon> Lugares
+			</button>
+
+			<button ion-item (click)="abrirPagina(acercade)">
+				<ion-icon name="information-circle"></ion-icon> Acerca de
+			</button>
+		</ion-list>
+	</ion-content>
+
+</ion-menu>
+
+<ion-nav [root]="rootPage" #content></ion-nav>

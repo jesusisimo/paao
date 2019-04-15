@@ -1,0 +1,34 @@
+<ion-header>
+
+	<ion-navbar color="primary">
+		<ion-title >Patrocinadores</ion-title>
+		<ion-buttons>
+			<button ion-button ion-only (click)="mostrar_menu()">
+				<ion-icon name="menu"></ion-icon>
+			</button>
+		</ion-buttons>
+	</ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+	<ion-refresher [enabled]="!refrescando"  (ionRefresh)="recargar_patrocinadores($event)">
+		<ion-refresher-content></ion-refresher-content>
+	</ion-refresher>
+	<ion-list>
+		<button ion-item *ngFor="let patrocinador of _ps.patrocinadores" (click)="ver_detalles(patrocinador)">
+			
+			<ion-thumbnail item-start>
+				<img src="{{ patrocinador.logo }}">
+			</ion-thumbnail>
+			<h2>{{ patrocinador.patrocinador }}</h2>
+			
+
+			
+		</button>
+		
+	</ion-list>
+	<ion-infinite-scroll (ionInfinite)="siguiente_pagina($event)">
+		<ion-infinite-scroll-content></ion-infinite-scroll-content>
+	</ion-infinite-scroll>
+</ion-content>

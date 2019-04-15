@@ -1,0 +1,11 @@
+<ion-navbar color="primary">
+	
+	<ion-buttons>
+		<button ion-button ion-only (click)="mostrar_menu()">
+			<ion-icon name="menu"></ion-icon>
+		</button>
+	</ion-buttons>
+</ion-navbar>
+<ion-content scroll="true" overflow-scroll="true">
+	<iframe [src]="sanitizer.bypassSecurityTrustResourceUrl(url)" data-tap-disabled="true" scrolling="no" frameborder="0" allowfullscreen style="width: 100%; height: 100%;" class="iframe"  ></iframe>
+</ion-content>

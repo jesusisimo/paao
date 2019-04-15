@@ -1,0 +1,35 @@
+page-principal {
+	ion-content{
+		background-color: #000000;
+		background-image:  url('../assets/img/splash_smo.png');
+		background-size: auto 100%;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+	.content-md {
+		color: #fff;
+		background-color: #000;
+	}
+	.content-ios {
+		color: #fff;
+		background-color: #000;
+	}
+	.icons-basic-page {
+		ion-icon {
+			font-size: 60px;/*80px para ios 60 para android*/
+			color: #ffffff;
+		}
+
+		ion-row {
+			
+			flex-wrap: wrap;
+		}
+
+		ion-col {
+			flex: 0 0 33%;
+			max-width: 33%;
+			text-align: center;
+			padding: 10px 5px;
+		}
+	}
+}

@@ -1,0 +1,31 @@
+<ion-header>
+
+	<ion-navbar color="primary">
+		<ion-title >Profesores {{nombrePais}}</ion-title>
+		<ion-buttons>
+			<button ion-button ion-only (click)="mostrar_menu()">
+				<ion-icon name="menu"></ion-icon>
+			</button>
+		</ion-buttons>
+	</ion-navbar>
+	<ion-searchbar (ionInput)="buscar($event)" placeholder="Buscar"></ion-searchbar>
+</ion-header>
+
+<ion-content padding>
+	<ion-refresher [enabled]="!refrescando"  (ionRefresh)="recargar_profesores($event)">
+		<ion-refresher-content></ion-refresher-content>
+	</ion-refresher>
+	<ion-list>
+		<button ion-item *ngFor="let profesor of _ps.profesores" (click)="ver_detalles(profesor)">
+			<ion-avatar item-start>
+				<img src="{{ profesor.foto }}">
+			</ion-avatar>
+			<h2>{{ profesor.nombre }}</h2>
+			<p>{{ profesor.puesto }}</p>
+			
+		</button>
+	</ion-list>
+	<ion-infinite-scroll (ionInfinite)="siguiente_pagina($event)">
+		<ion-infinite-scroll-content></ion-infinite-scroll-content>
+	</ion-infinite-scroll>
+</ion-content>

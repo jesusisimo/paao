@@ -1,0 +1,1 @@
+export const URL_SERVICIOS="http://wsbrb-services.com/smo/servicios";

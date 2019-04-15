@@ -1,0 +1,60 @@
+<ion-header>
+
+	<ion-navbar color="primary">
+		<ion-title>Detalles</ion-title>
+	</ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding  >
+	
+	<h3>
+		{{actividad.actividad}}
+	</h3>
+	<hr>
+	<p>
+		<ion-icon color="primary" name="clock"></ion-icon> {{actividad.horario}}
+	</p>
+	<hr>
+	<p  > <ion-icon color="secondary" name="people"></ion-icon> Profesores / coordinadores: <b>{{actividad.profesores}}</b></p>
+	
+	<p>
+		<ion-icon name="pin" color="danger"></ion-icon> {{actividad.sede}}
+	</p>
+	<hr>
+	<p>Descripcion:</p>
+	<p [innerHTML]="actividad.descripcion"></p>
+<!-- 	<ion-avatar text-center>
+		<img ion-img src="{{profesor.foto}}"/>
+	</ion-avatar>
+	<ion-card-content class="info">
+		<ion-card-title text-center color="primary">
+			{{profesor.nombre}}
+			<hr>
+		</ion-card-title>
+		
+		<ion-row>
+			<ion-col  col-9>
+				<p text-left >
+					{{profesor.puesto}}
+				</p>
+			</ion-col>
+			<ion-col  col-3 text-center>
+				<img src="{{profesor.bandera}}"   >
+				<label>{{profesor.pais}}</label>
+			</ion-col>
+		</ion-row>
+	</ion-card-content>
+
+-->
+
+
+
+
+
+
+
+</ion-content>
+
+

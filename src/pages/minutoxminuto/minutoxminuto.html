@@ -1,0 +1,56 @@
+<ion-header>
+
+	<ion-navbar color="primary">
+		<ion-title >Programa General</ion-title>
+		<ion-buttons>
+			<button ion-button ion-only (click)="mostrar_menu()">
+				<ion-icon name="menu"></ion-icon>
+			</button>
+		</ion-buttons>
+	</ion-navbar>
+	<ion-toolbar >
+		
+		<ion-segment [(ngModel)]="diaactual" color="secondary">
+			<ion-segment-button value="16">Sab/25
+			</ion-segment-button>
+			<ion-segment-button value="17">Dom/26
+			</ion-segment-button>
+			<ion-segment-button value="18">Lun/27
+			</ion-segment-button>
+			<ion-segment-button value="19">Mar/28
+			</ion-segment-button>
+		</ion-segment>
+	</ion-toolbar>
+	<ion-searchbar (ionInput)="buscar($event)" placeholder="Buscar"></ion-searchbar>
+</ion-header>
+
+<ion-content padding>
+
+	<div [ngSwitch]="diaactual">
+		<ng-container *ngFor="let dia of _ac.dias">
+			<div *ngSwitchCase="dia.clave_dia">
+				
+				<ion-list-header>
+					{{ dia.dia }}
+				</ion-list-header>
+				<button ion-item *ngFor="let actividad of dia.actividades" (click)="ver_detalles(actividad)">
+
+
+					<h2>{{actividad.actividad}}</h2>
+					<p><ion-icon name="clock" color="primary"></ion-icon> {{actividad.horario}} <ion-icon name="pin" color="danger"></ion-icon> {{actividad.salon}}</p>
+
+				</button>
+			</div>
+		</ng-container>
+	</div>
+
+
+
+
+
+	<ion-refresher [enabled]="!refrescando"  (ionRefresh)="recargar_actividades($event)">
+		<ion-refresher-content></ion-refresher-content>
+	</ion-refresher>
+
+
+</ion-content>

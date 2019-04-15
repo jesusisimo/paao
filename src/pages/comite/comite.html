@@ -1,0 +1,31 @@
+<ion-header>
+
+	<ion-navbar color="primary">
+		<ion-title >Comité Organizador</ion-title>
+		<ion-buttons>
+			<button ion-button ion-only (click)="mostrar_menu()">
+				<ion-icon name="menu"></ion-icon>
+			</button>
+		</ion-buttons>
+	</ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+	<ion-refresher [enabled]="!refrescando"  (ionRefresh)="recargar_comites($event)">
+		<ion-refresher-content></ion-refresher-content>
+	</ion-refresher>
+	<ion-list>
+		<li class="item" ion-item *ngFor="let comite of _cs.comites" padding style="border-left-color: #E8B46B;
+		border-left-width: 10px;
+		border-left-style: solid;" >
+
+		<h2 style="color: #002549">{{ comite.nombre }}</h2>
+		<p style="color: #E8B46B">{{ comite.puesto }}</p>
+	</li>
+
+</ion-list>
+<ion-infinite-scroll (ionInfinite)="siguiente_pagina($event)">
+	<ion-infinite-scroll-content></ion-infinite-scroll-content>
+</ion-infinite-scroll>
+</ion-content>

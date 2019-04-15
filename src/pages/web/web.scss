@@ -1,0 +1,15 @@
+page-web {
+
+	.iframe{
+		position:absolute; 
+		overflow: scroll; 
+		z-index: 1000;
+		height: 100%;
+		width:100%;
+		border: none;
+		-webkit-overflow-scrolling: touch !important;
+		overflow: scroll !important;
+		
+	}
+
+}

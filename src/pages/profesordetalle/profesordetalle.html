@@ -1,0 +1,81 @@
+<ion-header>
+
+	<ion-navbar color="primary">
+		<ion-title>Detalles</ion-title>
+	</ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding  >
+	<ion-avatar text-center>
+		<img ion-img src="{{profesor.foto}}"/>
+	</ion-avatar>
+	<ion-card-content class="info">
+		<ion-card-title text-center color="primary">
+			{{profesor.nombre}}
+			<hr>
+		</ion-card-title>
+		
+		<ion-row>
+			<ion-col  col-9>
+				<p text-left >
+					{{profesor.puesto}}
+				</p>
+			</ion-col>
+			<ion-col  col-3 text-center>
+				<img src="{{profesor.bandera}}"   >
+				<label>{{profesor.pais}}</label>
+			</ion-col>
+		</ion-row>
+	</ion-card-content>
+
+
+
+
+
+
+
+	<ion-segment [(ngModel)]="tipo">
+		<ion-segment-button value="act">
+			Actividades
+		</ion-segment-button>
+		<ion-segment-button value="curr">
+			Curriculum
+		</ion-segment-button>
+		
+	</ion-segment>
+
+
+	<div [ngSwitch]="tipo">
+		<ion-list *ngSwitchCase="'curr'">
+			<ion-card-content [hidden]="!tieneCurriculum" >
+				<p [innerHTML]="textHTML"></p>
+			</ion-card-content>	
+		</ion-list>
+
+		<ion-list *ngSwitchCase="'act'">
+			<ion-card-content >
+				<ion-list *ngFor="let dia of act.diasprofesor">
+					<ion-list-header>{{ dia.dia }}</ion-list-header>
+					<button ion-item  *ngFor="let actividad of dia.actividades" (click)="ver_detalles(actividad)">
+						<h2>{{actividad.actividad}}</h2>
+						<p><ion-icon name="clock" color="primary"></ion-icon> {{actividad.horario}} <ion-icon name="pin" color="danger"></ion-icon> {{actividad.salon}}</p>
+					</button>
+					
+				</ion-list>
+
+
+			</ion-card-content>	
+		</ion-list>
+
+	</div>
+
+
+
+
+
+
+</ion-content>
+
+

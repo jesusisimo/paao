@@ -1,0 +1,38 @@
+<ion-header>
+
+	<ion-navbar color="primary">
+		<ion-title >Votaciones</ion-title>
+		<ion-buttons>
+			<button ion-button ion-only (click)="mostrar_menu()">
+				<ion-icon name="menu"></ion-icon>
+			</button>
+		</ion-buttons>
+	</ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+	<ion-refresher [enabled]="!refrescando"  (ionRefresh)="recargar_votacion($event)">
+		<ion-refresher-content></ion-refresher-content>
+	</ion-refresher>
+
+	
+	<h3 *ngIf="!_vs.error" color="primary">{{_vs.pregunta}}</h3>
+	<p >{{_vs.mensaje}}</p>
+	<ion-list *ngIf="!_vs.error" radio-group>
+
+		<ion-item *ngFor="let opcion of _vs.opciones">
+			<ion-label>{{ opcion.opcion }}</ion-label>
+			<ion-radio checked="{{ opcion.seleccionado }}" value="{{ opcion.id }}" disabled="false" color="secondary" (ionSelect)="seleccionar_opcion(opcion.id)"></ion-radio>
+		</ion-item>
+
+	</ion-list>
+	<button *ngIf="!_vs.error && seleccionada && !_vs.contestada"   ion-button block color="secondary" (click)="enviar_respuesta();">Enviar respuesta</button>
+	<h3 *ngIf="_vs.error" text-center>
+		<br><br>
+		Desplaza hacia abajo para actualizar
+		<br>
+		<ion-icon name="arrow-down"></ion-icon>
+	</h3>
+
+</ion-content>

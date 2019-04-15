@@ -1,0 +1,41 @@
+<ion-header>
+
+	<ion-navbar color="primary">
+		<ion-title>Patrocinador</ion-title>
+	</ion-navbar>
+
+</ion-header>
+
+
+<ion-content   >
+
+
+
+	<ion-card>
+		<img src="{{patrocinador.logo}}"/>
+		<ion-card-content>
+			<ion-card-title>
+				{{patrocinador.patrocinador}}
+			</ion-card-title>
+			<p [innerHTML]="textHTML"></p>
+		</ion-card-content>
+		<ion-row>
+			<ion-col>
+				<button ion-button color="primary" clear small icon-start (click)="visitar_pagina(patrocinador.pagina)">
+					<ion-icon name='link'></ion-icon>
+					{{patrocinador.pagina}}
+				</button>
+			</ion-col>
+		</ion-row>
+
+	</ion-card>
+
+
+
+
+
+
+
+</ion-content>
+
+

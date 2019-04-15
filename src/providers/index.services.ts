@@ -1,0 +1,11 @@
+export { ProfesoresProvider } from "./profesores/profesores";
+export { PatrocinadoresProvider } from "./patrocinadores/patrocinadores";
+export { ComitesProvider } from "./comites/comites";
+export { UsuarioProvider } from "./usuario/usuario";
+export { AjustesProvider } from "./ajustes/ajustes";
+export { NotificacionesProvider } from "./notificaciones/notificaciones";
+export { LugaresProvider } from "./lugares/lugares";
+export { UbicacionProvider } from "./ubicacion/ubicacion";
+export { VotacionProvider } from "./votacion/votacion";
+export { ActividadesProvider } from "./actividades/actividades";
+export { PaisesProvider } from "./paises/paises";
